@@ -4,6 +4,13 @@
 }
 .primarycolor {
   color: #2c5fa5;
+  text-align: left;
+}
+@media only screen and (max-width: 668px) {
+  .primarycolor {
+    text-align: justify;
+    padding: none !important;
+  }
 }
 .headingTag {
   font-size: 55px;

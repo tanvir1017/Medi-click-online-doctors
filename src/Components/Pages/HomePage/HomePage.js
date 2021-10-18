@@ -23,36 +23,37 @@ const HomePage = () => {
               Click Medic provides simple, affordable health and insurance
               services
             </p>
-            <button className="btn btn-outline-dark text-white">
+            <button className="btn btn-outline-dark text-white mb-3">
               Learn More
               <i className="ms-2 fas fa-long-arrow-alt-right"></i>
             </button>
           </div>
           <div className="col-md-2 col-lg-2"></div>
-          <div className="col-md-4 col-lg-4 col-12">
+          <div className="col-md-4 col-lg-4 col-sm-8">
             <img
+              className="img-fluid"
               src="https://milvikbd.com/_next/image?url=%2FHome-Page-Banner.png&w=384&q=75"
               alt=""
             />
           </div>
         </div>
         <div className="row">
-          <div className="col-md-12 col-sm-12">
+          <div className="mb-0 col-md-6 col-sm-12 col-lg-12">
             <span className="fw-bold fs-5 text-white me-3">
               Underwritten By
             </span>
             <img
               width="20%"
-              className=" img-fluid bg-white px-2 rounded"
+              className="img-fluid bg-white px-2 rounded"
               src="https://milvikbd.com/_next/image?url=%2FUnderwriter-logo.png&w=384&q=75"
               alt=""
             />
           </div>
         </div>
       </div>
-      <div className="afterbanner p-5">
-        <div className="mt-3 row px-5 text-start">
-          <div className="col-md-5 col-lg-5 col-sm-12  text-start">
+      <div className="afterbanner">
+        <div className="row text-start p-5">
+          <div className="col-md-5  col-lg-5 col-sm-12 ">
             <h2 className="fw-bold primarycolor">
               We believe that every family <br />
               should have access <br />
@@ -61,7 +62,7 @@ const HomePage = () => {
               they need it
             </h2>
           </div>
-          <div className="col-md-7 col-lg-7 col-sm-12 text-dark fs-6">
+          <div className="col-md-7 col-lg-7  col-sm-12 text-dark fs-6">
             <p className="afterbannePText">
               We are a leading global mobile-enabled health and insurance
               service provider. We offer affordable, all-in-one, family health
@@ -84,10 +85,10 @@ const HomePage = () => {
       </div>
 
       <div className="productCM">
-        <div className="container">
+        <div className="container p-5">
           <div className="text-start">
             {" "}
-            <h2 className="my-4 mb-1 fw-bold">
+            <h2 className="mb-1 fw-bold">
               Product by{" "}
               <span className="fw-bold text-primary">Click Medic</span>
             </h2>
