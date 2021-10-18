@@ -8,7 +8,7 @@ const Service = (props) => {
     <div className="">
       <Card style={{ height: "100%" }}>
         <Card.Img variant="top" src={pic} />
-        <Card.Body>
+        <Card.Body className="text-start">
           <Card.Title>
             {name} <small className="text-muted">{title}</small>
           </Card.Title>
@@ -18,7 +18,7 @@ const Service = (props) => {
               <span>
                 {" "}
                 <Link to="/home_page">
-                  ...Reade More <i class="fas fa-long-arrow-alt-right"></i>
+                  ...Reade More <i className="fas fa-long-arrow-alt-right"></i>
                 </Link>
               </span>
             </p>
@@ -27,7 +27,7 @@ const Service = (props) => {
               <span>
                 {" "}
                 <Link to="/home_page">
-                  ...Read More <i class="fas fa-long-arrow-alt-right"></i>
+                  ...Read More <i className="fas fa-long-arrow-alt-right"></i>
                 </Link>
               </span>
             </p>

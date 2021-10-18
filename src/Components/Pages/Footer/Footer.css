@@ -13,7 +13,7 @@
 .footerContact a:hover {
   text-decoration: underline;
 }
-.h5 {
+.footerAlert {
   background: rgb(199, 247, 255);
   padding: 10px;
   border-radius: 10px;

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <div className="footerBackground p-5">
-        <div className="container p-5">
+        <div className="container">
           <div className="row">
             <div className="container col-md-3 col-lg-3 col-sm-12">
               <img width="90px" className="logo shadow" src={logo} alt="" />
@@ -18,7 +18,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="col-md-3 col-lg-3 text-start col-sm-12 footerContact">
-              <h5 className="h5 mt-3 mb-4 shadow">Contact use</h5>
+              <h5 className="footerAlert mt-3 mb-4 shadow">Contact use</h5>
               <small>Click Medic BANGLADESH LTD</small> <br />
               <small>Email: info@bd.milvik.com</small> <br />
               <small>Address: AMBON Complex (12th Floor), </small> <br />
@@ -31,7 +31,7 @@ const Footer = () => {
               <small>Phone: +8809614500599</small> <br />
             </div>
             <div className="col-md-3 col-lg-3 text-start col-sm-12 footerContact">
-              <h5 className="h5 mt-3 mb-4 shadow">Company</h5>
+              <h5 className="footerAlert mt-3 mb-4 shadow">Company</h5>
               <Link to="/about-us">About us</Link> <br />
               <Link to="/">Product </Link> <br />
               <Link to="/">Services</Link> <br />
@@ -43,7 +43,9 @@ const Footer = () => {
             </div>
             <div className="col-md-3 col-lg-3 col-sm-12 text-start">
               <div className="row">
-                <h3 className="h5 mt-3 mb-4 shadow text-start">Follow us on</h3>
+                <h3 className="footerAlert mt-3 mb-4 shadow text-start">
+                  Follow us on
+                </h3>
                 <div className="col-md-7 col-lg-7 col-12">
                   <div className="row">
                     <div className="col-md-3">

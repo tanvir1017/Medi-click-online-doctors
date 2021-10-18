@@ -7,7 +7,7 @@ const FAQ = () => {
       <div className="bannerBg">
         <div className="row">
           <div
-            className="col-md-6 col-lg-6 col-12 p-5"
+            className="col-md-6 col-lg-6 col-12 "
             style={{ textAlign: "left" }}
           >
             <p className="headingTag fw-bold">frequently asked question</p>
@@ -50,37 +50,37 @@ const FAQ = () => {
         </div>
       </div>
 
-      <section class="accordions alert alert-primary">
-        <div class="about-our-course" id="about-our-course">
-          <div class="container">
-            <h1 class="section-title fw-bold text-center mb-3 mt-5 text-dark">
+      <section className="accordions alert alert-primary">
+        <div className="about-our-course" id="about-our-course">
+          <div className="container">
+            <h1 className="section-title fw-bold text-center mb-3 mt-5 text-dark">
               Some Question ??
             </h1>
-            <div class="row question">
-              <div class="col-md-12 col-sm-12 col-lg-12 ">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+            <div className="row question">
+              <div className="col-md-12 col-sm-12 col-lg-12 ">
+                <div className="accordion" id="accordionExample">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-1"
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           What is Click Medic Health service
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-1"
-                      class="accordion-collapse collapse show"
+                      className="accordion-collapse collapse show"
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-1"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           The MILVIK Group has created full-service
                           micro-insurance and mobile healthcare solutions to
@@ -90,28 +90,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-2"
                         aria-expanded="false"
                         aria-controls="collapse-2"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           What are the service offered by Click Medic?
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-2"
-                      class="accordion-collapse collapse"
+                      className="accordion-collapse collapse"
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-2"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Milvik offers Milvik Life and Milvik Health services
                           which include coverage for life and health as well as
@@ -120,28 +120,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-3"
                         aria-expanded="false"
                         aria-controls="collapseOne"
                       >
-                        <spna class="fw-bold">
+                        <span className="fw-bold">
                           What are the CM service offerd by Click Mdedic ?
-                        </spna>
+                        </span>
                       </button>
                     </h2>
                     <div
                       id="one-3"
-                      class="accordion-collapse collapse"
+                      className="accordion-collapse collapse"
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-3"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Milvik mHealth services include 24/7 tele-doctor
                           services, SMS-prescription, weekly healthcare program
@@ -150,28 +150,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-33"
                         aria-expanded="true"
                         aria-controls="collapse-33"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           How to sign up with Click Medic?
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-33"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-33"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           If you are interested in availing any of the services
                           offered by Milvik, please call 09610500599. Our
@@ -181,26 +181,26 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-4"
                         aria-expanded="true"
                         aria-controls="collapse-4"
                       >
-                        <span class="fw-bold">What is hospital Cash ?</span>
+                        <span className="fw-bold">What is hospital Cash ?</span>
                       </button>
                     </h2>
                     <div
                       id="one-4"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-4"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Hospital cash is a daily fixed amount for each day of
                           in-patient hospitalization.
@@ -208,28 +208,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-5"
                         aria-expanded="true"
                         aria-controls="collapse-5"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           What is an out-patient cash benefits ?
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-5"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-5"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Milvik Health offers out-patient benefits for medicine
                           purchase, diagnostic tests, and doctor visits provided
@@ -239,28 +239,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-6"
                         aria-expanded="true"
                         aria-controls="collapse-6"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           Who Can Register for Click medic ?
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-6"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-6"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Any Bangladeshi individual, aged between 18-58 years
                           can register for Milvik Life. However, upon
@@ -272,28 +272,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-7"
                         aria-expanded="true"
                         aria-controls="collapse-7"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           What are the waiting periods of Click Medic ?
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-7"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-7"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Accidental deaths are covered from the 1st day of the
                           month following registration. Natural death and death
@@ -303,28 +303,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-8"
                         aria-expanded="true"
                         aria-controls="collapse-8"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           From when i Can claim the benefits for Click Medic ?
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-8"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-8"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Coverage starts from the 1st day of the month
                           following registration. For example, if you register
@@ -343,28 +343,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-9"
                         aria-expanded="true"
                         aria-controls="collapse-9"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           What is the medical test cost?
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-9"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-9"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Milvik has a network of 100+ partner hospitals across
                           the country where Milvik customers can get 10%-40%
@@ -374,17 +374,17 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-10"
                         aria-expanded="true"
                         aria-controls="collapse10"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           What is the tele doctor service and who can able to
                           for the service ?
                         </span>
@@ -392,11 +392,11 @@ const FAQ = () => {
                     </h2>
                     <div
                       id="one-10"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-10"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Mivlik has in-house qualified doctors who are
                           available 24/7. Only the subscribers of Milvik Health
@@ -407,28 +407,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-11"
                         aria-expanded="true"
                         aria-controls="collapse-11"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           How do i talk with Click Medic online doctor ?
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-11"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-11"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           To talk to our tele-doctor please call our helpline
                           number 09610500599. Our customer service officer will
@@ -439,17 +439,17 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-12"
                         aria-expanded="true"
                         aria-controls="collapse-12"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           What happens if a tele doctor cannot solved my
                           problem?
                         </span>
@@ -457,11 +457,11 @@ const FAQ = () => {
                     </h2>
                     <div
                       id="one-12"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-12"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Tele-doctor service, by nature, can solve only primary
                           health issues. For critical problems you will be
@@ -472,28 +472,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-13"
                         aria-expanded="true"
                         aria-controls="collapse-13"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           What is the pyment methood for Click Medic ?
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-13"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-13"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           Currently we accept payment through bKash only. After
                           registration, a payment gateway link will be sent to
@@ -503,28 +503,28 @@ const FAQ = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
                       <button
-                        class=" accordion-button my-accordion"
+                        className=" accordion-button my-accordion"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#one-14"
                         aria-expanded="true"
                         aria-controls="collapse-14"
                       >
-                        <span class="fw-bold">
+                        <span className="fw-bold">
                           What are the payments frequencies available ?
                         </span>
                       </button>
                     </h2>
                     <div
                       id="one-14"
-                      class="accordion-collapse collapse  "
+                      className="accordion-collapse collapse  "
                       aria-labelledby="headingOne"
                       data-bs-parent="#one-14"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <strong>
                           For Milvik Life we have daily and monthly payment
                           frequencies and for health we have monthly payment

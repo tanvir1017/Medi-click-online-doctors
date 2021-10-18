@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import ContactUs from "../Pages/Contactus/ContactUs";
 import FAQ from "../Pages/FAQ/FAQ";
 import Footer from "../Pages/Footer/Footer";
 import Header from "../Pages/Header/Header";
@@ -15,11 +16,14 @@ const Home = () => {
           <Route exact path="/">
             <HomePage></HomePage>
           </Route>
-          <Route exact path="/home_page">
+          <Route path="/home_page">
             <HomePage></HomePage>
           </Route>
-          <Route exact path="/about-us">
+          <Route path="/about-us">
             <AboutUs></AboutUs>
+          </Route>
+          <Route path="/contact_us">
+            <ContactUs></ContactUs>
           </Route>
           <Route path="/faq">
             <FAQ></FAQ>
