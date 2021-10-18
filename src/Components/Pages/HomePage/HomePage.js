@@ -1,6 +1,7 @@
 import Button from "@restart/ui/esm/Button";
 import React from "react";
 import { Card } from "react-bootstrap";
+import "../Footer/Footer.css";
 import Services from "../Services/Services";
 import "./Home.css";
 
