@@ -1,42 +1,39 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from "../../../Img/Click-medic.png";
 
 const Header = () => {
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand as={Link} to="/">
           {" "}
-          <img
-            width="70px"
-            src="https://i.ibb.co/X3b6tj2/Click-medic.png"
-            alt=""
-          />{" "}
+          <img width="70px" src={logo} alt="" />{" "}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="ms-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
-            <Nav.Link as={Link} to="/about-us">
-              about us
-            </Nav.Link>
-            <Nav.Link as={Link} to="/Product">
-              Product
-            </Nav.Link>
-            <Nav.Link as={Link} to="/Contact_us">
-              Contact us
-            </Nav.Link>
-            <Nav.Link as={Link} to="/FAQ">
-              Consumer satisfaction
-            </Nav.Link>
-            <Nav.Link as={Link} to="/FAQ">
-              FAQ
-            </Nav.Link>
-          </Nav>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Nav.Link className="text-dark" as={Link} to="/home_page">
+            Home
+          </Nav.Link>
+          <Nav.Link className="text-dark" as={Link} to="/about-us">
+            about us
+          </Nav.Link>
+          <Nav.Link className="text-dark" as={Link} to="/Product">
+            Product
+          </Nav.Link>
+          <Nav.Link className="text-dark" as={Link} to="/Contact_us">
+            Contact us
+          </Nav.Link>
+          <Nav.Link className="text-dark" as={Link} to="/services">
+            Services
+          </Nav.Link>
+          <Nav.Link className="text-dark" as={Link} to="">
+            Consumer satisfaction
+          </Nav.Link>
+          <Nav.Link className="text-dark" as={Link} to="/faq">
+            FAQ
+          </Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

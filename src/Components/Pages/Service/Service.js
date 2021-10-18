@@ -1,42 +1,39 @@
 import React from "react";
-import { Card, Col } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Service = (props) => {
+  const { name, pic, education, institute, title } = props.user;
   return (
-    <div className="container">
-      <Col>
-        <Card className="card h-100">
-          <Card.Img className="card-img" variant="top" src="" />
-          <Card.Body>
-            <Card.Title>
-              <h2>{}</h2>
-              <small className="text-muted">{}</small>
-            </Card.Title>
-            <Card.Text>
-              <ul>
-                <li>{}</li>
-                <li>{}</li>
-                <li>{}</li>
-                <li>{}</li>
-                <li>{}</li>
-              </ul>
-              <div className="d-flex justify-content-center my-2">
-                <strong className="alert alert-danger p-2 m-2">
-                  {" "}
-                  {} {}{" "}
-                </strong>
-                <strong className="alert alert-success  p-2 m-2 ">
-                  {" "}
-                  {} {}{" "}
-                </strong>
-                <strong className="alert alert-danger  p-2 m-2 ">
-                  {} {}{" "}
-                </strong>
-              </div>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </Col>
+    <div className="">
+      <Card style={{ height: "100%" }}>
+        <Card.Img variant="top" src={pic} />
+        <Card.Body>
+          <Card.Title>
+            {name} <small className="text-muted">{title}</small>
+          </Card.Title>
+          <Card.Text>
+            <p>
+              {education.slice(0, 100)}{" "}
+              <span>
+                {" "}
+                <Link to="/home_page">
+                  ...Reade More <i class="fas fa-long-arrow-alt-right"></i>
+                </Link>
+              </span>
+            </p>
+            <p>
+              {institute.slice(0, 200)}
+              <span>
+                {" "}
+                <Link to="/home_page">
+                  ...Read More <i class="fas fa-long-arrow-alt-right"></i>
+                </Link>
+              </span>
+            </p>
+          </Card.Text>
+        </Card.Body>
+      </Card>
     </div>
   );
 };

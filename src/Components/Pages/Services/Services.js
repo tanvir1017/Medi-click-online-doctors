@@ -1,23 +1,34 @@
 import React, { useEffect, useState } from "react";
-import { ProgressBar, Row } from "react-bootstrap";
+import { Row, Spinner } from "react-bootstrap";
+import "../HomePage/Home.css";
 import Service from "../Service/Service";
 
 const Services = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch("./fackdb.json")
+    fetch("./fakedb.json")
       .then((res) => res.json())
       .then((data) => setUsers(data));
   }, []);
-
   return (
-    <div>
+    <div className="container mt-5 ">
+      <h2 className="fw-bold">
+        Our <span className="text-primary">Specialist</span>
+      </h2>
+      <div
+        className="bg-primary"
+        style={{
+          width: "180px",
+          height: "5px",
+          marginBottom: "-50px",
+        }}
+      ></div>
       {users.length === 0 ? (
-        <ProgressBar variant="danger" animated now={85} />
+        <Spinner variant="danger" animation="grow" />
       ) : (
-        <Row xs={1} lg={4} md={2} className="g-4">
+        <Row xs={1} lg={4} md={2} className="g-4 h-100 mt-5">
           {users.map((user) => (
-            <Service user={user}></Service>
+            <Service user={user} key={user.id}></Service>
           ))}
         </Row>
       )}

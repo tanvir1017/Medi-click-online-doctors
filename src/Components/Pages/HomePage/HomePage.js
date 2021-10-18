@@ -1,7 +1,7 @@
 import Button from "@restart/ui/esm/Button";
 import React from "react";
 import { Card } from "react-bootstrap";
-import Service from "../Service/Service";
+import Services from "../Services/Services";
 import "./Home.css";
 
 const HomePage = () => {
@@ -25,7 +25,7 @@ const HomePage = () => {
             </p>
             <button className="btn btn-outline-dark text-white">
               Learn More
-              <i class="ms-2 fas fa-long-arrow-alt-right"></i>
+              <i className="ms-2 fas fa-long-arrow-alt-right"></i>
             </button>
           </div>
           <div className="col-md-2 col-lg-2"></div>
@@ -85,12 +85,20 @@ const HomePage = () => {
 
       <div className="productCM">
         <div className="container">
-          <div className="text-center">
+          <div className="text-start">
             {" "}
-            <h2 className="my-4">
+            <h2 className="my-4 mb-1 fw-bold">
               Product by{" "}
-              <span className="fw-bold primarycolor">Click Medic</span>
+              <span className="fw-bold text-primary">Click Medic</span>
             </h2>
+            <div
+              className="bg-primary"
+              style={{
+                width: "180px",
+                height: "5px",
+                marginBottom: "25px",
+              }}
+            ></div>
           </div>
           <div className="row text-start">
             <div className="col-md-4 mb-3 alert alert-primary">
@@ -167,8 +175,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
-      <Service></Service>
+      <div className="afterbanner py-4">
+        <Services></Services>
+      </div>
     </div>
   );
 };
