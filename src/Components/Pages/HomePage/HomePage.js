@@ -1,12 +1,13 @@
 import Button from "@restart/ui/esm/Button";
 import React from "react";
 import { Card } from "react-bootstrap";
+import Service from "../Service/Service";
 import "./Home.css";
 
 const HomePage = () => {
   return (
     <div>
-      <div className="bannerBg mt-2">
+      <div className="bannerBg">
         <div className="row">
           <div
             className="col-md-6 col-lg-6 col-12"
@@ -91,11 +92,17 @@ const HomePage = () => {
               <span className="fw-bold primarycolor">Click Medic</span>
             </h2>
           </div>
-          <div className="row">
-            <div className="col-md-4 mb-3">
+          <div className="row text-start">
+            <div className="col-md-4 mb-3 alert alert-primary">
+              <img
+                className="img-fluid mb-2 shadow p-2  rounded"
+                width="90px"
+                src="https://i.ibb.co/X3b6tj2/Click-medic.png"
+                alt=""
+              />
               <p className="text-start afterbannePText">
-                Milvik provides financial protection for unforeseen life events
-                & 24x7 access to quality healthcare from home. We provide
+                Click Medic provides financial protection for unforeseen life
+                events & 24x7 access to quality healthcare from home. We provide
                 coverages for you & your family, which can go up to 8 members,
                 You can choose from a range of packages starting from 145 Tk per
                 month with varied levels of cover. Our subscribers can also
@@ -104,11 +111,15 @@ const HomePage = () => {
               </p>
             </div>
             <div className="col-md-4 mb-3">
-              <Card className="h-100" style={{ width: "100%" }}>
+              <Card
+                className="h-100 alert alert-danger"
+                style={{ width: "100%" }}
+              >
                 <Card.Img
+                  className="shadow p-2 rounded"
                   variant="right"
                   style={{
-                    width: "50px",
+                    width: "70px",
                     textAlign: "right",
                   }}
                   src="https://milvikbd.com/_next/image?url=%2Fumbrella.svg&w=48&q=75"
@@ -120,18 +131,22 @@ const HomePage = () => {
                     death the earning member of the family. Also get compensated
                     for partial or total physical disability.
                   </Card.Text>
-                  <Button variant="primary" className="btn btn-outline-primary">
+                  <Button variant="primary" className="btn btn-outline-dark">
                     Learn More
                   </Button>
                 </Card.Body>
               </Card>
             </div>
             <div className="col-md-4 mb-3">
-              <Card className="h-100" style={{ width: "100%" }}>
+              <Card
+                className="h-100 alert alert-primary"
+                style={{ width: "100%" }}
+              >
                 <Card.Img
+                  className="shadow p-2 rounded"
                   variant="top"
                   style={{
-                    width: "50px",
+                    width: "70px",
                   }}
                   src="https://milvikbd.com/_next/image?url=%2Fheart.svg&w=48&q=75"
                 />
@@ -152,6 +167,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      <Service></Service>
     </div>
   );
 };

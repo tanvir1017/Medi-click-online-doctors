@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="#">
           {" "}
@@ -29,6 +29,9 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link as={Link} to="/Contact_us">
               Contact us
+            </Nav.Link>
+            <Nav.Link as={Link} to="/FAQ">
+              Consumer satisfaction
             </Nav.Link>
             <Nav.Link as={Link} to="/FAQ">
               FAQ
