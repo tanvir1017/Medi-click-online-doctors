@@ -26,6 +26,13 @@ const Login = () => {
       history.push(redirect_url);
     });
   };
+
+  const handleEmailPasswordLogin = (e) => {
+    e.preventDefault();
+    emailPasswordLogin().then((result) => {
+      history.push(redirect_url);
+    });
+  };
   return (
     <>
       <div className="bannerBg">
@@ -89,7 +96,7 @@ const Login = () => {
           </p>
           <div></div>
           <button
-            onClick={emailPasswordLogin}
+            onClick={handleEmailPasswordLogin}
             type="submit"
             className="btn btn-primary mt-3 py-3"
             style={{ paddingLeft: "80px", paddingRight: "80px" }}

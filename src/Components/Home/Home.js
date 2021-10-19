@@ -9,6 +9,7 @@ import Footer from "../Pages/Footer/Footer";
 import Header from "../Pages/Header/Header";
 import HomePage from "../Pages/HomePage/HomePage";
 import Login from "../Pages/Login/Login";
+import NotFound from "../Pages/NotFound/NotFound";
 import PrivateRoute from "../Pages/Private/PrivateRoute";
 import Product from "../Pages/Product/Product";
 import ReadMore from "../Pages/ReadeMore/ReadMore";
@@ -46,6 +47,9 @@ const Home = () => {
             </Route>
             <Route path="/faq">
               <FAQ></FAQ>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>

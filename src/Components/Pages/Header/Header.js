@@ -24,9 +24,6 @@ const Header = () => {
           <Nav.Link className="text-dark" as={Link} to="/product">
             Product
           </Nav.Link>
-          <Nav.Link className="text-dark" as={Link} to="/services">
-            Services
-          </Nav.Link>
           <Nav.Link className="text-dark" as={Link} to="/career">
             Career
           </Nav.Link>
@@ -42,6 +39,7 @@ const Header = () => {
               Log out
             </button>
           )}
+          <strong className="text-success ms-2">{user.displayName}</strong>
           <Nav.Link className="text-dark" as={Link} to="/home_page"></Nav.Link>
           {
             <img

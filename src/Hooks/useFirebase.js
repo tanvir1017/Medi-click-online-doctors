@@ -7,6 +7,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initAuthentication from "../Firebase/firebase.init";
@@ -16,6 +17,7 @@ const auth = getAuth();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
+  const [name, setName] = useState("");
   const [isLoad, setIsLoad] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassWord] = useState("");
@@ -47,38 +49,26 @@ const useFirebase = () => {
   const handlePassword = (e) => {
     setPassWord(e.target.value);
   };
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
   const handleLoadingPage = (e) => {
-    e.preventDefault();
-    if (email.length === 0 && password.length === 0) {
-      alert("please enter a valid email and set a Strong password");
-      return;
-    }
-    if (password.length < 6) {
-      alert("Password should be at least 6 characters");
-      return;
-    }
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        console.log(result.user);
-        setError("");
-      })
-      .catch((error) => {
+    return createUserWithEmailAndPassword(auth, email, password).catch(
+      (error) => {
         setError(error.message);
-      });
+      }
+    );
   };
-  const emailPasswordLogin = (e) => {
-    e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        console.log(result.user);
-        setError("");
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
+  const setUserName = () => {
+    updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
+  };
+  const emailPasswordLogin = () => {
+    return signInWithEmailAndPassword(auth, email, password).catch((error) => {
+      setError(error.message);
+    });
   };
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -99,6 +89,10 @@ const useFirebase = () => {
     handleLoadingPage,
     emailPasswordLogin,
     isLoad,
+    setUserName,
+    handleName,
+    email,
+    password,
   };
 };
 

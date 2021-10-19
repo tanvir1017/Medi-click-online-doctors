@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 import logo from "../../../Img/Click-medic.png";
 import "./ContactUs.css";
@@ -12,7 +12,40 @@ const ContactUs = () => {
     handleEmail,
     handlePassword,
     error,
+    handleName,
+    setUserName,
+    email,
+    password,
   } = useAuth();
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_url = location.state?.from || "/home_page";
+  console.log(redirect_url);
+  const handleLocationByGoogle = () => {
+    googleSignIn().then((result) => {
+      history.push(redirect_url);
+    });
+  };
+  const handleLocationByGithub = () => {
+    githubSignIn().then((result) => {
+      history.push(redirect_url);
+    });
+  };
+  const handleContactuse = (e) => {
+    e.preventDefault();
+    if (email.length === 0 && password.length === 0) {
+      alert("please enter a valid email and set a Strong password");
+      return;
+    }
+    if (password.length < 6) {
+      alert("Password should be at least 6 characters");
+      return;
+    }
+    handleLoadingPage().then((result) => {
+      history.push(redirect_url);
+      setUserName();
+    });
+  };
   return (
     <>
       <div className="bannerBg">
@@ -53,6 +86,7 @@ const ContactUs = () => {
         <form>
           <div className="form-floating mb-3">
             <input
+              onBlur={handleName}
               type="text"
               className="form-control"
               id="floatingInput"
@@ -92,7 +126,7 @@ const ContactUs = () => {
           </div>
           <div className="form-floating">
             <input
-              onBlur={handlePassword}
+              onClick={handlePassword}
               type="password"
               className="form-control"
               id="floatingPassword"
@@ -105,7 +139,7 @@ const ContactUs = () => {
           </p>
           <div></div>
           <button
-            onClick={handleLoadingPage}
+            onBlur={handleContactuse}
             type="submit"
             className="btn btn-primary mt-3 py-3"
             style={{ paddingLeft: "80px", paddingRight: "80px" }}
@@ -122,12 +156,15 @@ const ContactUs = () => {
         <div className="my-3">___________or___________</div>
         <div>
           <button
-            onClick={googleSignIn}
+            onClick={handleLocationByGoogle}
             className="m-2 btn px-5 py-2 btn-success"
           >
             <i className="fab fa-google"></i>
           </button>
-          <button onClick={githubSignIn} className="m-2 btn px-5 py-2 btn-dark">
+          <button
+            onClick={handleLocationByGithub}
+            className="m-2 btn px-5 py-2 btn-dark"
+          >
             <i className="fab fa-github"></i>
           </button>
         </div>
