@@ -35,4 +35,4 @@ Take a Jurney[View Protfoilo](https://github.com/mdtanvir037).
 
 # Request
 
-    if any problem with my code please reload
+    if any problem with my code please reload (please)
