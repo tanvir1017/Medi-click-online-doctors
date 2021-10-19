@@ -1,9 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 import logo from "../../../Img/Click-medic.png";
 
 const Login = () => {
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_url = location.state?.from || "/home_page";
+  console.log(location.state?.from);
   const {
     googleSignIn,
     githubSignIn,
@@ -12,6 +16,16 @@ const Login = () => {
     handlePassword,
     error,
   } = useAuth();
+  const handleLocationByGoogle = () => {
+    googleSignIn().then((result) => {
+      history.push(redirect_url);
+    });
+  };
+  const handleLocationByGithub = () => {
+    githubSignIn().then((result) => {
+      history.push(redirect_url);
+    });
+  };
   return (
     <>
       <div className="bannerBg">
@@ -92,12 +106,15 @@ const Login = () => {
         <div className="my-3">___________or___________</div>
         <div>
           <button
-            onClick={googleSignIn}
+            onClick={handleLocationByGoogle}
             className="m-2 btn px-5 py-2 btn-success"
           >
             <i className="fab fa-google"></i>
           </button>
-          <button onClick={githubSignIn} className="m-2 btn px-5 py-2 btn-dark">
+          <button
+            onClick={handleLocationByGithub}
+            className="m-2 btn px-5 py-2 btn-dark"
+          >
             <i className="fab fa-github"></i>
           </button>
         </div>

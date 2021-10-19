@@ -24,11 +24,7 @@ const useFirebase = () => {
 
   const googleSignIn = () => {
     setIsLoad(true);
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setUser(result.user);
-        console.log(user);
-      })
+    return signInWithPopup(auth, googleProvider)
       .catch((error) => {
         setError(error.message);
       })
@@ -38,13 +34,9 @@ const useFirebase = () => {
   };
   const githubSignIn = () => {
     const githubProvider = new GithubAuthProvider();
-    signInWithPopup(auth, githubProvider)
-      .then((result) => {
-        setUser(result.user);
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
+    return signInWithPopup(auth, githubProvider).catch((error) => {
+      setError(error.message);
+    });
   };
   const logOut = () => {
     signOut(auth).then(() => {
