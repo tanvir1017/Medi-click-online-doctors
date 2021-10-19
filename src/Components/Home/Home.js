@@ -6,6 +6,7 @@ import FAQ from "../Pages/FAQ/FAQ";
 import Footer from "../Pages/Footer/Footer";
 import Header from "../Pages/Header/Header";
 import HomePage from "../Pages/HomePage/HomePage";
+import Login from "../Pages/Login/Login";
 
 const Home = () => {
   return (
@@ -24,6 +25,9 @@ const Home = () => {
           </Route>
           <Route path="/contact_us">
             <ContactUs></ContactUs>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
           </Route>
           <Route path="/faq">
             <FAQ></FAQ>

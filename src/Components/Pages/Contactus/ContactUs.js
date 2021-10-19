@@ -1,10 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import useFirebase from "../../../Hooks/useFirebase";
 import logo from "../../../Img/Click-medic.png";
 import "./ContactUs.css";
 
 const ContactUs = () => {
-  const { googleSignIn, githubSignIn } = useFirebase();
+  const {
+    googleSignIn,
+    githubSignIn,
+    handleLoadingPage,
+    handleEmail,
+    handlePassword,
+    error,
+  } = useFirebase();
   return (
     <>
       <div className="bannerBg">
@@ -42,59 +50,75 @@ const ContactUs = () => {
           src={logo}
           alt=""
         />
-        <div className="form-floating mb-3">
-          <input
-            type="text"
-            className="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
-          />
-          <label htmlFor="floatingInput">First Name</label>
-        </div>
-        <div className="form-floating mb-3">
-          <input
-            type="text"
-            className="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
-          />
-          <label htmlFor="floatingInput">Last Name</label>
-        </div>
-        <div className="form-floating mb-3">
-          <input
-            type="email"
-            className="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
-          />
-          <label htmlFor="floatingInput">Email address</label>
-        </div>{" "}
-        <div className="form-floating mb-3">
-          <input
-            type="password"
-            className="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
-          />
-          <label htmlFor="floatingInput">Password</label>
-        </div>
-        <div className="form-floating">
-          <input
-            type="password"
-            className="form-control"
-            id="floatingPassword"
-            placeholder="Password"
-          />
-          <label htmlFor="floatingPassword">Retype Password</label>
-        </div>
-        <div></div>
-        <button
-          type="submit"
-          className="btn btn-primary mt-3 py-3"
-          style={{ paddingLeft: "80px", paddingRight: "80px" }}
-        >
-          Submit
-        </button>
+        <form>
+          <div className="form-floating mb-3">
+            <input
+              type="text"
+              className="form-control"
+              id="floatingInput"
+              placeholder="First Name"
+              required
+            />
+            <label htmlFor="floatingInput">First Name</label>
+          </div>
+          <div className="form-floating mb-3">
+            <input
+              type="text"
+              className="form-control"
+              id="floatingInput"
+              placeholder="Last Name"
+            />
+            <label htmlFor="floatingInput">Last Name</label>
+          </div>
+          <div className="form-floating mb-3">
+            <input
+              onBlur={handleEmail}
+              type="email"
+              className="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label htmlFor="floatingInput">Email address</label>
+          </div>{" "}
+          <div className="form-floating mb-3">
+            <input
+              onBlur={handlePassword}
+              type="password"
+              className="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label htmlFor="floatingInput">Password</label>
+          </div>
+          <div className="form-floating">
+            <input
+              onBlur={handlePassword}
+              type="password"
+              className="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label htmlFor="floatingPassword">Retype Password</label>
+          </div>
+          <p>
+            <small>{error}</small>
+          </p>
+          <div></div>
+          <button
+            onClick={handleLoadingPage}
+            type="submit"
+            className="btn btn-primary mt-3 py-3"
+            style={{ paddingLeft: "80px", paddingRight: "80px" }}
+          >
+            Submit
+          </button>
+          <div className="mt-3">
+            {" "}
+            <small>
+              Already have an account ? <Link to="/login">Sign in</Link>
+            </small>
+          </div>
+        </form>
         <div className="my-3">___________or___________</div>
         <div>
           <button
