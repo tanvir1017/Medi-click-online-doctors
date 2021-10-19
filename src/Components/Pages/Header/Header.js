@@ -45,7 +45,7 @@ const Header = () => {
           <Nav.Link className="text-dark" as={Link} to="/home_page"></Nav.Link>
           {
             <img
-              width="50px"
+              width="55px"
               className="rounded-circle"
               src={user.photoURL}
               alt=""

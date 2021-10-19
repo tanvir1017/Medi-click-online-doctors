@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "click-medic"
-  }
+    "default": "click-medic",
+    "y": "private-auth-4b592",
+    "build": "click-medic-435d1"
+  },
+  "targets": {}
 }

@@ -1,10 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyAX0Bt-oaRqXHOzWiOF6ar9QRPgvQlfltU",
-  authDomain: "private-auth-4b592.firebaseapp.com",
-  projectId: "private-auth-4b592",
-  storageBucket: "private-auth-4b592.appspot.com",
-  messagingSenderId: "417851341763",
-  appId: "1:417851341763:web:fe336e43a688c014bb9b76",
+  apiKey: "AIzaSyCfXWEoBhApqbSRoby7vUsAIKnQX4laf1E",
+  authDomain: "click-medic-435d1.firebaseapp.com",
+  projectId: "click-medic-435d1",
+  storageBucket: "click-medic-435d1.appspot.com",
+  messagingSenderId: "36517483281",
+  appId: "1:36517483281:web:982537c6d7ab5b39b2f2b0",
 };
-
 export default firebaseConfig;
