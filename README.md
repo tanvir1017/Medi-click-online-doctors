@@ -15,6 +15,16 @@ Click here[Website over view](https://click-medic-435d1.web.app/).
     ** Vanilla Css
     ** Git
 
+# Feature added
+
+    ** Home page
+    ** About company
+    ** Product
+    ** Login page
+    ** Contact page as Sign up page
+    ** Faq
+    ** Career
+
 ## Develop By
 
 Take a Jurney[View Protfoilo](https://github.com/mdtanvir037).
