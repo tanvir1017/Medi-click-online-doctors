@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useFirebase from "../../../Hooks/useFirebase";
+import useAuth from "../../../Hooks/useAuth";
 import logo from "../../../Img/Click-medic.png";
 import "./ContactUs.css";
 
@@ -12,7 +12,7 @@ const ContactUs = () => {
     handleEmail,
     handlePassword,
     error,
-  } = useFirebase();
+  } = useAuth();
   return (
     <>
       <div className="bannerBg">
@@ -21,7 +21,7 @@ const ContactUs = () => {
             className="col-md-6 col-lg-6 col-12"
             style={{ textAlign: "left" }}
           >
-            <p className="headingTag fw-bold contact-heading pe-4">
+            <p className=" fw-bold contact-heading pe-4 contactTag">
               Please fill the below information
             </p>
             <p

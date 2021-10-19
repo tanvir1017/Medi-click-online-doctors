@@ -17,16 +17,16 @@ const Service = (props) => {
               {education.slice(0, 100)}{" "}
               <span>
                 {" "}
-                <Link to="/home_page">
+                <Link to={`/our_specialist/${name}`}>
                   ...Reade More <i className="fas fa-long-arrow-alt-right"></i>
                 </Link>
               </span>
             </p>
             <p>
-              {institute.slice(0, 200)}
+              {institute.slice(0, 50)}
               <span>
                 {" "}
-                <Link to="/home_page">
+                <Link to={`/our_specialist/${name}`}>
                   ...Read More <i className="fas fa-long-arrow-alt-right"></i>
                 </Link>
               </span>

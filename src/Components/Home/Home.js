@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import AuthProvider from "../../Context/AuthProvider";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import Career from "../Pages/Career/Career";
 import ContactUs from "../Pages/Contactus/ContactUs";
 import FAQ from "../Pages/FAQ/FAQ";
 import Footer from "../Pages/Footer/Footer";
@@ -9,6 +10,8 @@ import Header from "../Pages/Header/Header";
 import HomePage from "../Pages/HomePage/HomePage";
 import Login from "../Pages/Login/Login";
 import PrivateRoute from "../Pages/Private/PrivateRoute";
+import Product from "../Pages/Product/Product";
+import ReadMore from "../Pages/ReadeMore/ReadMore";
 
 const Home = () => {
   return (
@@ -23,8 +26,17 @@ const Home = () => {
             <Route path="/home_page">
               <HomePage></HomePage>
             </Route>
-            <PrivateRoute path="/about-us">
+            <Route path="/about-us">
               <AboutUs></AboutUs>
+            </Route>
+            <PrivateRoute path="/product">
+              <Product></Product>
+            </PrivateRoute>
+            <PrivateRoute path="/career">
+              <Career></Career>
+            </PrivateRoute>
+            <PrivateRoute path="/our_specialist/:details">
+              <ReadMore></ReadMore>
             </PrivateRoute>
             <Route path="/contact_us">
               <ContactUs></ContactUs>
@@ -32,9 +44,9 @@ const Home = () => {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <PrivateRoute path="/faq">
+            <Route path="/faq">
               <FAQ></FAQ>
-            </PrivateRoute>
+            </Route>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

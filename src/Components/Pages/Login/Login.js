@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useFirebase from "../../../Hooks/useFirebase";
+import useAuth from "../../../Hooks/useAuth";
 import logo from "../../../Img/Click-medic.png";
 
 const Login = () => {
@@ -11,7 +11,7 @@ const Login = () => {
     handleEmail,
     handlePassword,
     error,
-  } = useFirebase();
+  } = useAuth();
   return (
     <>
       <div className="bannerBg">

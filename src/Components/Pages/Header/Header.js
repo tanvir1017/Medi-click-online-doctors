@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import useFirebase from "../../../Hooks/useFirebase";
+import useAuth from "../../../Hooks/useAuth";
 import logo from "../../../Img/Click-medic.png";
 
 const Header = () => {
-  const { logOut, user } = useFirebase();
+  const { logOut, user } = useAuth();
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
@@ -24,17 +24,17 @@ const Header = () => {
           <Nav.Link className="text-dark" as={Link} to="/product">
             Product
           </Nav.Link>
-          <Nav.Link className="text-dark" as={Link} to="/contact_us">
-            Contact us
-          </Nav.Link>
           <Nav.Link className="text-dark" as={Link} to="/services">
             Services
           </Nav.Link>
-          <Nav.Link className="text-dark" as={Link} to="/">
-            Consumer satisfaction
+          <Nav.Link className="text-dark" as={Link} to="/career">
+            Career
           </Nav.Link>
           <Nav.Link className="text-dark me-3" as={Link} to="/faq">
             FAQ
+          </Nav.Link>
+          <Nav.Link className="text-dark" as={Link} to="/contact_us">
+            Contact us
           </Nav.Link>
 
           {user.displayName && (
