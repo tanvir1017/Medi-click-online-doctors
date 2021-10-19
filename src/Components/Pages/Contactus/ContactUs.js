@@ -4,7 +4,7 @@ import logo from "../../../Img/Click-medic.png";
 import "./ContactUs.css";
 
 const ContactUs = () => {
-  const { googleSignIn, faceBookSignIn, githubSignIn } = useFirebase();
+  const { googleSignIn, githubSignIn } = useFirebase();
   return (
     <>
       <div className="bannerBg">
@@ -87,12 +87,13 @@ const ContactUs = () => {
           />
           <label htmlFor="floatingPassword">Retype Password</label>
         </div>
+        <div></div>
         <button
           type="submit"
           className="btn btn-primary mt-3 py-3"
           style={{ paddingLeft: "80px", paddingRight: "80px" }}
         >
-          Submite
+          Submit
         </button>
         <div className="my-3">___________or___________</div>
         <div>
@@ -101,12 +102,6 @@ const ContactUs = () => {
             className="m-2 btn px-5 py-2 btn-success"
           >
             <i className="fab fa-google"></i>
-          </button>
-          <button
-            onClick={faceBookSignIn}
-            className="m-2 btn px-5 py-2 btn-primary"
-          >
-            <i className="fab fa-facebook"></i>
           </button>
           <button onClick={githubSignIn} className="m-2 btn px-5 py-2 btn-dark">
             <i className="fab fa-github"></i>

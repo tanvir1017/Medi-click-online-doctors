@@ -1,5 +1,4 @@
 import {
-  FacebookAuthProvider,
   getAuth,
   GithubAuthProvider,
   GoogleAuthProvider,
@@ -12,25 +11,16 @@ import initAuthentication from "../Firebase/firebase.init";
 
 initAuthentication();
 const auth = getAuth();
+
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
-
+  const googleProvider = new GoogleAuthProvider();
   const googleSignIn = () => {
-    const googleProvider = new GoogleAuthProvider();
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
-  };
-  const faceBookSignIn = () => {
-    const facebookProvider = new FacebookAuthProvider();
-    signInWithPopup(auth, facebookProvider)
-      .then((result) => {
-        setUser(result.user);
+        console.log(user);
       })
       .catch((error) => {
         setError(error.message);
@@ -58,12 +48,10 @@ const useFirebase = () => {
       }
     });
   }, []);
-
   return {
     user,
     error,
     googleSignIn,
-    faceBookSignIn,
     githubSignIn,
     logOut,
   };

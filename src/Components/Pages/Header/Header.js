@@ -5,7 +5,7 @@ import useFirebase from "../../../Hooks/useFirebase";
 import logo from "../../../Img/Click-medic.png";
 
 const Header = () => {
-  const { user, logOut } = useFirebase();
+  const { logOut, user } = useFirebase();
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
@@ -30,25 +30,27 @@ const Header = () => {
           <Nav.Link className="text-dark" as={Link} to="/services">
             Services
           </Nav.Link>
-          <Nav.Link className="text-dark" as={Link} to="">
+          <Nav.Link className="text-dark" as={Link} to="/">
             Consumer satisfaction
           </Nav.Link>
-          <Nav.Link className="text-dark" as={Link} to="/faq">
+          <Nav.Link className="text-dark me-3" as={Link} to="/faq">
             FAQ
           </Nav.Link>
+
           {user.displayName && (
-            <button className="btn btn-outline-primary" onClick={logOut}>
+            <button onClick={logOut} className="btn btn-outline-primary">
               Log out
             </button>
           )}
-          <Nav.Link className="text-dark" as={Link} to="/faq">
+          <Nav.Link className="text-dark" as={Link} to="/home_page"></Nav.Link>
+          {
             <img
               width="50px"
               className="rounded-circle"
               src={user.photoURL}
               alt=""
             />
-          </Nav.Link>
+          }
         </Navbar.Collapse>
       </Container>
     </Navbar>
