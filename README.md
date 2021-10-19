@@ -8,32 +8,30 @@ Click here[Website over view](https://click-medic-435d1.web.app/).
 
 # Maked by
 
-    ** React Js
-    ** React Router
-    ** Firebase
-    ** React Boostrap
-    ** Vanilla Css
-    ** Git
+- React Js
+- React Router
+- Firebase
+- React Boostrap
+- Vanilla Css
+- Git
 
 # Feature added
 
-    ** Home page
-    ** About company
-    ** Product
-    ** Login page
-    ** Contact page as Sign up page
-    ** Faq
-    ** Career
-    Markup : ```javascript
-         ```
+- Home page
+- About company
+- Product
+- Login page
+- Contact page as Sign up page
+- Faq
+- Career
 
 ## Develop By
 
 Take a Jurney[View Protfoilo](https://github.com/mdtanvir037).
 
-## Author Name
+## Authors
 
-    Tanvir Hossain
+- [@mdtanvir037](https://github.com/mdtanvir037/)
 
 # Request
 
