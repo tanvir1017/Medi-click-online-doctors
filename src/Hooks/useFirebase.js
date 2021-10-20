@@ -18,6 +18,7 @@ const auth = getAuth();
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const [name, setName] = useState("");
+  console.log(name);
   const [isLoad, setIsLoad] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassWord] = useState("");
@@ -63,7 +64,9 @@ const useFirebase = () => {
     );
   };
   const setUserName = () => {
-    updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
+    updateProfile(auth.currentUser, { displayName: name }).then((result) => {
+      setName();
+    });
   };
   const emailPasswordLogin = () => {
     return signInWithEmailAndPassword(auth, email, password).catch((error) => {

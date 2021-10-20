@@ -15,6 +15,7 @@ const Login = () => {
     handleEmail,
     handlePassword,
     error,
+    setUserName,
   } = useAuth();
   const handleLocationByGoogle = () => {
     googleSignIn().then((result) => {
@@ -23,6 +24,7 @@ const Login = () => {
   };
   const handleLocationByGithub = () => {
     githubSignIn().then((result) => {
+      setUserName();
       history.push(redirect_url);
     });
   };

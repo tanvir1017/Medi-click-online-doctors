@@ -20,7 +20,6 @@ const ContactUs = () => {
   const location = useLocation();
   const history = useHistory();
   const redirect_url = location.state?.from || "/home_page";
-  console.log(redirect_url);
   const handleLocationByGoogle = () => {
     googleSignIn().then((result) => {
       history.push(redirect_url);
@@ -42,8 +41,8 @@ const ContactUs = () => {
       return;
     }
     handleLoadingPage().then((result) => {
-      history.push(redirect_url);
       setUserName();
+      history.push(redirect_url);
     });
   };
   return (
@@ -139,7 +138,7 @@ const ContactUs = () => {
           </p>
           <div></div>
           <button
-            onBlur={handleContactuse}
+            onClick={handleContactuse}
             type="submit"
             className="btn btn-primary mt-3 py-3"
             style={{ paddingLeft: "80px", paddingRight: "80px" }}

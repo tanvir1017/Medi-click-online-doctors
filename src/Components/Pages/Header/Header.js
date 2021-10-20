@@ -6,6 +6,7 @@ import logo from "../../../Img/Click-medic.png";
 
 const Header = () => {
   const { logOut, user } = useAuth();
+  console.log(user);
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
