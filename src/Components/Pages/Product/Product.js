@@ -36,19 +36,6 @@ const Product = () => {
             />
           </div>
         </div>
-        <div className="row">
-          <div className="mb-0 col-md-6 col-sm-12 col-lg-12">
-            <span className="fw-bold fs-5 text-white me-3">
-              Underwritten By
-            </span>
-            <img
-              width="20%"
-              className="img-fluid bg-white px-2 rounded"
-              src="https://milvikbd.com/_next/image?url=%2FUnderwriter-logo.png&w=384&q=75"
-              alt=""
-            />
-          </div>
-        </div>
       </div>
       <div className="afterbanner mt-3">
         <div className="row text-start p-5">
@@ -157,7 +144,7 @@ const Product = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <div className="card h-100 alert alert-secondary p-4">
+              <div className="card h-100 alert alert-success p-4">
                 <img
                   className="mx-auto mb-3"
                   width="20%"
@@ -193,7 +180,7 @@ const Product = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <div className="card h-100 alert alert-success p-4">
+              <div className="card h-100 alert alert-warning p-4">
                 <img
                   className="mx-auto mb-3"
                   width="20%"

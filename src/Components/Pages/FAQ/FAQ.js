@@ -38,19 +38,6 @@ const FAQ = () => {
             />
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-6 col-sm-12 col-lg-10">
-            <span className="fw-bold fs-5 text-white me-3">
-              Underwritten By
-            </span>
-            <img
-              width="20%"
-              className="img-fluid bg-white px-2 rounded"
-              src="https://milvikbd.com/_next/image?url=%2FUnderwriter-logo.png&w=384&q=75"
-              alt=""
-            />
-          </div>
-        </div>
       </div>
 
       <section className="accordions alert alert-primary">

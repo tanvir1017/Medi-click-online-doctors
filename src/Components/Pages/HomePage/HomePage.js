@@ -32,10 +32,10 @@ const HomePage = () => {
             </button>
           </div>
           <div className="col-md-2 col-lg-2 col-sm-12"></div>
-          <div className="col-md-4 col-lg-4 col-sm-12">
+          <div className="col-md-4 col-lg-4 col-sm-12 mt-5">
             <img
               className="img-fluid"
-              src="https://milvikbd.com/_next/image?url=%2FHome-Page-Banner.png&w=384&q=75"
+              src="https://i.pinimg.com/originals/50/18/58/50185886dd0bfd2c8fc231044423e30f.gif"
               alt=""
             />
           </div>
