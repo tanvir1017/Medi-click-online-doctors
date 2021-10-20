@@ -1,5 +1,6 @@
 import React from "react";
 import "../HomePage/Home.css";
+import ViewDetails from "../HomePage/ViewDetails/ViewDetails";
 
 const Product = () => {
   return (
@@ -27,7 +28,7 @@ const Product = () => {
             </button>
           </div>
           <div className="col-md-2 col-lg-2"></div>
-          <div className="col-md-4 col-lg-4 col-sm-8">
+          <div className="col-md-3 col-lg-4 col-sm-8">
             <img
               className="img-fluid"
               src="https://cheesyworks.com/assets/img/g3.gif"
@@ -52,7 +53,7 @@ const Product = () => {
       <div className="afterbanner mt-3">
         <div className="row text-start p-5">
           <div className="col-md-7 col-lg-7  col-sm-12 text-dark fs-6">
-            <p className="afterbannePText text-end">
+            <p className="afterbannePText productTextFirst ">
               Provides your family access to qualified doctors 24x7 on call. Get
               protection against income loss due to illness. Also save
               out-of-pocket expenses through coverage of medicines, specialist
@@ -60,7 +61,7 @@ const Product = () => {
               and more. We have multiple packages for you based on your needs.
               Click on "Check our packages” to view details.
             </p>
-            <p className="mt-3 afterbannePText text-end">
+            <p className="mt-3 afterbannePText productTextFirst">
               We are a leading global mobile-enabled health and insurance
               service provider. We offer affordable, all-in-one, family health
               services, covering insurance, health screening and tele-medicine.
@@ -96,7 +97,7 @@ const Product = () => {
             />
           </div>
           <div className="col-md-7 col-lg-7  col-sm-12 text-dark fs-6">
-            <p className="afterbannePText mb-3">
+            <p className=" productTextLast mb-3">
               Protect your loved ones from financial crisis in case of the death
               of the earning member of the family. Also, get compensated for
               partial or total physical disability. We have multiple packages
@@ -122,7 +123,103 @@ const Product = () => {
           </div>
         </div>
       </div>
-      <div className="row"></div>
+      <div className="productCM p-5">
+        <div className="container my-5">
+          <div className="row g-4">
+            <h1>
+              Benefits of{" "}
+              <span className="fw-bold primarycolor">
+                Click Medic Health & Life Users
+              </span>
+            </h1>
+            <p className="text-muted  mb-5">
+              The bundled Tele-medicine is what makes it different! Along with
+              affordable microinsurance, Milvik has these value additions for
+              its health & life users.
+            </p>
+            <div className="col-md-3">
+              <div className="card h-100 alert alert-danger p-4">
+                <img
+                  className="mx-auto mb-3"
+                  width="20%"
+                  src="https://milvikbd.com/_next/image?url=%2FRed.svg&w=48&q=75"
+                  alt=""
+                />
+                <div className="text-start card-title fs-5 fw-bold">
+                  {" "}
+                  24/7 Tele Doctor Services
+                </div>
+                <div className="card-body text-start">
+                  Access to our experienced team of tele doctors to support you
+                  any time day and night. Looking for experts? Get on-demand
+                  specialists for you or your family when you need them.
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="card h-100 alert alert-secondary p-4">
+                <img
+                  className="mx-auto mb-3"
+                  width="20%"
+                  src="https://milvikbd.com/_next/image?url=%2FGreenlike.svg&w=48&q=75"
+                  alt=""
+                />
+                <div className="text-start card-title fs-5 text-dark fw-bold">
+                  {" "}
+                  Outpatient coverage
+                </div>
+                <div className="card-body text-start">
+                  Including doctor fees, prescribed medicine and health check
+                  ups.
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="card h-100 alert alert-primary p-4">
+                <img
+                  className="mx-auto mb-3"
+                  width="20%"
+                  src="https://milvikbd.com/_next/image?url=%2FBluelike.svg&w=48&q=75"
+                  alt=""
+                />
+                <div className="text-start card-title text-dark fw-bold fs-5">
+                  {" "}
+                  Health & Wellness Partners
+                </div>
+                <div className="card-body text-start">
+                  Up to 30% discount from 150+ partner hospitals and diagnostic
+                  centers.
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="card h-100 alert alert-success p-4">
+                <img
+                  className="mx-auto mb-3"
+                  width="20%"
+                  src="https://milvikbd.com/_next/image?url=%2Fyellowlike.svg&w=48&q=75"
+                  alt=""
+                />
+                <div className="text-start card-title fs-5 text-dark fw-bold">
+                  {" "}
+                  Hospital Cashback
+                </div>
+                <div className="card-body text-start">
+                  Our product provides cashback on hospital stays in any
+                  hospital in Bangladesh with no minimum stay requirement. You
+                  can apply for claims at your convenience. Click on detailed
+                  packages to learn more.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="my-5 container">
+        <div className="shadow-lg">
+          <ViewDetails></ViewDetails>
+        </div>
+      </div>
     </div>
   );
 };
