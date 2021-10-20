@@ -13,6 +13,7 @@ const ContactUs = () => {
     handlePassword,
     error,
     handleName,
+    user,
     setUserName,
     email,
     password,
@@ -53,9 +54,16 @@ const ContactUs = () => {
             className="col-md-6 col-lg-6 col-12"
             style={{ textAlign: "left" }}
           >
-            <p className=" fw-bold contact-heading pe-4 contactTag">
-              Please fill the below information
-            </p>
+            {user.displayName ? (
+              <p className=" fw-bold contact-heading pe-4 contactTag">
+                Welcome Back ,{" "}
+                <span className="text-warning">{user.displayName}</span>
+              </p>
+            ) : (
+              <p className=" fw-bold contact-heading pe-4 contactTag">
+                Please fill the below information
+              </p>
+            )}
             <p
               className="text-white contact-heading"
               style={{ textAlign: "left", marginTop: "-10px" }}
@@ -84,24 +92,29 @@ const ContactUs = () => {
         />
         <form>
           <div className="form-floating mb-3">
-            <input
-              onBlur={handleName}
-              type="text"
-              className="form-control"
-              id="floatingInput"
-              placeholder="First Name"
-              required
-            />
-            <label htmlFor="floatingInput">First Name</label>
-          </div>
-          <div className="form-floating mb-3">
-            <input
-              type="text"
-              className="form-control"
-              id="floatingInput"
-              placeholder="Last Name"
-            />
-            <label htmlFor="floatingInput">Last Name</label>
+            {user.displayName ? (
+              <input
+                type="text"
+                className="form-control"
+                id="floatingInput"
+                placeholder={user.displayName}
+                disabled
+              />
+            ) : (
+              <input
+                onBlur={handleName}
+                type="text"
+                className="form-control"
+                id="floatingInput"
+                placeholder="First Name"
+                required
+              />
+            )}
+            {user.displayName ? (
+              <label htmlFor="floatingInput">{user.displayName}</label>
+            ) : (
+              <label htmlFor="floatingInput">First Name</label>
+            )}
           </div>
           <div className="form-floating mb-3">
             <input

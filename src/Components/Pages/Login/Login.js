@@ -15,6 +15,7 @@ const Login = () => {
     handleEmail,
     handlePassword,
     error,
+    user,
     setUserName,
   } = useAuth();
   const handleLocationByGoogle = () => {
@@ -43,9 +44,16 @@ const Login = () => {
             className="col-md-6 col-lg-6 col-12"
             style={{ textAlign: "left" }}
           >
-            <p className="headingTag fw-bold contact-heading pe-4">
-              Please fill the below information
-            </p>
+            {user.displayName ? (
+              <p className="headingTag fw-bold contact-heading pe-4">
+                Hey your logged by,{" "}
+                <span className="text-warning">{user.displayName}</span>
+              </p>
+            ) : (
+              <p className="headingTag fw-bold contact-heading pe-4">
+                Please fill the below information
+              </p>
+            )}
             <p
               className="text-white contact-heading"
               style={{ textAlign: "left", marginTop: "-10px" }}

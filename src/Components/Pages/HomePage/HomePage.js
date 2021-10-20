@@ -1,9 +1,11 @@
-import Button from "@restart/ui/esm/Button";
 import React from "react";
-import { Card } from "react-bootstrap";
 import "../Footer/Footer.css";
 import Services from "../Services/Services";
+import Benifites from "./Benifites/Benifites";
+import ClickMedicProdcuts from "./ClickMedicProducts/ClickMedicProdcuts";
+import ConsumerSatisfaction from "./ConsumerSatisfacton/ConsumerSatisfaction";
 import "./Home.css";
+import ViewDetails from "./ViewDetails/ViewDetails";
 
 const HomePage = () => {
   return (
@@ -14,17 +16,17 @@ const HomePage = () => {
             className="col-md-6 col-lg-6 col-12"
             style={{ textAlign: "left" }}
           >
-            <p className="headingTag fw-bold">
+            <p className="fw-bold contact-heading contactTag">
               Protecting the future of every family
             </p>
             <p
-              className="text-white"
+              className="text-white contact-heading"
               style={{ textAlign: "left", marginTop: "-10px" }}
             >
               Click Medic provides simple, affordable health and insurance
               services
             </p>
-            <button className="btn btn-outline-dark text-white mb-3">
+            <button className="contact-btn btn btn-outline-dark text-white mb-3">
               Learn More
               <i className="ms-2 fas fa-long-arrow-alt-right"></i>
             </button>
@@ -87,94 +89,7 @@ const HomePage = () => {
 
       <div className="productCM">
         <div className="container p-5">
-          <div className="text-start">
-            {" "}
-            <h2 className="mb-1 fw-bold">
-              Product by{" "}
-              <span className="fw-bold text-primary">Click Medic</span>
-            </h2>
-            <div
-              className="bg-primary"
-              style={{
-                width: "180px",
-                height: "5px",
-                marginBottom: "25px",
-              }}
-            ></div>
-          </div>
-          <div className="row text-start">
-            <div className="col-md-4 mb-3 alert alert-primary">
-              <img
-                className="img-fluid mb-2 shadow p-2  rounded"
-                width="90px"
-                src="https://i.ibb.co/X3b6tj2/Click-medic.png"
-                alt=""
-              />
-              <p className="text-start afterbannePText">
-                Click Medic provides financial protection for unforeseen life
-                events & 24x7 access to quality healthcare from home. We provide
-                coverages for you & your family, which can go up to 8 members,
-                You can choose from a range of packages starting from 145 Tk per
-                month with varied levels of cover. Our subscribers can also
-                avail discounts from our 150+ partner hospitals & diagnostic
-                centers around the country.
-              </p>
-            </div>
-            <div className="col-md-4 mb-3">
-              <Card
-                className="h-100 alert alert-danger"
-                style={{ width: "100%" }}
-              >
-                <Card.Img
-                  className="shadow p-2 rounded"
-                  variant="right"
-                  style={{
-                    width: "70px",
-                    textAlign: "right",
-                  }}
-                  src="https://milvikbd.com/_next/image?url=%2Fumbrella.svg&w=48&q=75"
-                />
-                <Card.Body>
-                  <Card.Title className="fw-bold">Click Medic Life</Card.Title>
-                  <Card.Text className="text-start">
-                    Protect your loved ones from financial crisis in case of
-                    death the earning member of the family. Also get compensated
-                    for partial or total physical disability.
-                  </Card.Text>
-                  <Button variant="primary" className="btn btn-outline-dark">
-                    Learn More
-                  </Button>
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col-md-4 mb-3">
-              <Card
-                className="h-100 alert alert-primary"
-                style={{ width: "100%" }}
-              >
-                <Card.Img
-                  className="shadow p-2 rounded"
-                  variant="top"
-                  style={{
-                    width: "70px",
-                  }}
-                  src="https://milvikbd.com/_next/image?url=%2Fheart.svg&w=48&q=75"
-                />
-                <Card.Body>
-                  <Card.Title className="fw-bold">
-                    Click Medic Health
-                  </Card.Title>
-                  <Card.Text className="text-start">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary" className="btn btn-outline-primary">
-                    Learn More
-                  </Button>
-                </Card.Body>
-              </Card>
-            </div>
-          </div>
+          <ClickMedicProdcuts></ClickMedicProdcuts>
         </div>
       </div>
       <div className="afterbanner py-4">
@@ -204,199 +119,14 @@ const HomePage = () => {
         </div>
       </div>
       <div className="my-5 container">
-        <div className="row">
-          <div className="col-md-4 col-sm-12 col-lg-4">
-            <h1 className="fw-bold text-start mt-5 mb-3">
-              Why we are your <span className="primarycolor ">best choice</span>
-            </h1>
-            <p className="text-start mb-5" style={{ lineHeight: "30px" }}>
-              Over the last 9 years, we have served more than 4 million
-              customers in Bangladesh, providing access to primary healthcare
-              and risk protection in their times of need.
-            </p>
-            <div className="row mt-3">
-              <div className="col-3" style={{ marginRight: "-26px" }}>
-                <img
-                  src="https://milvikbd.com/_next/image?url=%2FBlue.svg&w=1920&q=75"
-                  alt=""
-                />
-              </div>
-              <div className="col-9 text-start">
-                <h5 className="fw-bold">Affordable plans</h5>
-                <p>Starting from just 145 Tk monthly</p>
-              </div>
-            </div>
-            <div className="row mt-3">
-              <div className="col-3" style={{ marginRight: "-26px" }}>
-                <img
-                  src="https://milvikbd.com/_next/image?url=%2FGreen.svg&w=1920&q=75"
-                  alt=""
-                />
-              </div>
-              <div className="col-9 text-start">
-                <h5 className="fw-bold">Limited waiting</h5>
-                <p>Maximum protection on what you are paying for</p>
-              </div>
-            </div>
-            <div className="row mt-3">
-              <div className="col-3" style={{ marginRight: "-26px" }}>
-                <img
-                  src="https://milvikbd.com/_next/image?url=%2FRed.svg&w=1920&q=75"
-                  alt=""
-                />
-              </div>
-              <div className="col-9 text-start">
-                <h5 className="fw-bold">Simple & easy</h5>
-                <p> Digital registration & claims payment.</p>
-              </div>
-            </div>
-            <div className="row mt-3">
-              <div className="col-3" style={{ marginRight: "-26px" }}>
-                <img
-                  src="https://milvikbd.com/_next/image?url=%2FYellow.svg&w=1920&q=75"
-                  alt=""
-                />
-              </div>
-              <div className="col-9 text-start">
-                <h5 className="fw-bold">Paperless & no medical Hassle-free </h5>
-                <p>registration without any paperwork</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-8 col-sm-12 col-lg-8">
-            <div className="row">
-              <div>
-                <h1 className="fw-bold text-start mt-5 mb-3">
-                  <span className="primarycolor ">
-                    What users say about their experience
-                  </span>
-                </h1>
-                <p className="text-start mb-5" style={{ lineHeight: "30px" }}>
-                  Trust being the biggest foundation of our service, we try to
-                  ensure users have a positive experience with all of our
-                  service dimensions.
-                </p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-4 col-lg-4 col-sm-12 mb-2">
-                <div className="card h-100 alert alert-success">
-                  <div className="card-body">
-                    <img
-                      className="rounded-circle"
-                      src="https://milvikbd.com/_next/image?url=%2FCustomer-1.png&w=64&q=75"
-                      alt=""
-                    />
-                    <div className="card-title fw-bold mt-4">Ishak Hossain</div>
-                    <p className="mt-2">
-                      The doctor's treatment was excellent. They gave me enough
-                      time and helped me recover from home.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4 col-lg-4 col-sm-12 mb-2">
-                <div className="card h-100 alert alert-success">
-                  <div className="card-body">
-                    <img
-                      className="rounded-circle"
-                      src="https://milvikbd.com/_next/image?url=%2FCustomer-2.png&w=64&q=75"
-                      alt=""
-                    />
-                    <div className="card-title fw-bold mt-4">
-                      Abdullah Al Mamun
-                    </div>
-                    <p className="mt-2">
-                      Getting Milvik Health was one of the best decisions I
-                      took. Milvik doctors helped me during a lot of emergency
-                      health situations. I also got super fast claims money from
-                      Milvik when I was admitted to the hospital.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4 col-lg-4 col-sm-12 mb-2">
-                <div className="card h-100 alert alert-success">
-                  <div className="card-body">
-                    <img
-                      className="rounded-circle"
-                      src="https://milvikbd.com/_next/image?url=%2FCustomer-3.png&w=64&q=75"
-                      alt=""
-                    />
-                    <div className="card-title fw-bold mt-4">Masud Rana</div>
-                    <p className="mt-2">
-                      The doctor's treatment was excellent. They gave me enough
-                      time and helped me recover from home.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ConsumerSatisfaction></ConsumerSatisfaction>
       </div>
-
       <div className="my-5 container">
-        <div className="row">
-          <div className="col-md-4 col-lg-4 col-sm-1 g-4">
-            <div className="card h-100 alert-success alert">
-              <img
-                style={{ width: "350px" }}
-                className="card-img-top img-fluid"
-                src="https://milvikbd.com/_next/image?url=%2FServed.svg&w=256&q=75"
-                alt=""
-              />
-              <div className="card-body mt-5">
-                <h2 className="fw-bold primarycolor">
-                  4 Million Families Financially Protected
-                </h2>
-                <p className="text-start" style={{ lineHeight: "30px" }}>
-                  By protecting them financially. Additionally supporting over 1
-                  million users with our tele doctor services
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-lg-4 col-sm-1 g-4">
-            <div className="card h-100 alert-success alert">
-              <img
-                style={{ width: "300px" }}
-                className="card-img-top img-fluid "
-                src="https://milvikbd.com/_next/image?url=%2Fredt.svg&w=256&q=75"
-                alt=""
-              />
-              <div className="card-body mt-5">
-                <h3 className="fw-bold primarycolor">
-                  Over 2 Core Taka Claims Paid
-                </h3>
-                <p className="text-start" style={{ lineHeight: "30px" }}>
-                  With the highest claims ratio in the industry. We provide a
-                  convenient insurance claim process
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-lg-4 col-sm-1 g-4">
-            <div className="card h-100 alert-success alert">
-              <img
-                style={{ width: "350px" }}
-                className="card-img-top img-fluid"
-                src="https://milvikbd.com/_next/image?url=%2Fyeasy.svg&w=256&q=75"
-                alt=""
-              />
-              <div className="card-body mt-5">
-                <h3 className="fw-bold primarycolor">
-                  Easy & convenient process
-                </h3>
-                <p className="text-start" style={{ lineHeight: "30px" }}>
-                  Very easy registration and claim process digitally
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Benifites></Benifites>
       </div>
-      <div className="my-5 container"></div>
+      <div className="my-5 container">
+        <ViewDetails></ViewDetails>
+      </div>
     </div>
   );
 };

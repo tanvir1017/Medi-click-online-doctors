@@ -1,4 +1,5 @@
 import React from "react";
+import "../HomePage/Home.css";
 
 const Product = () => {
   return (
@@ -9,16 +10,18 @@ const Product = () => {
             className="col-md-6 col-lg-6 col-12"
             style={{ textAlign: "left" }}
           >
-            <p className="headingTag fw-bold">Click Medic Products</p>
+            <p className="headingTag fw-bold contact-heading">
+              Click Medic Products
+            </p>
             <p
-              className="text-white"
+              className="text-white contact-heading"
               style={{ textAlign: "left", marginTop: "-10px" }}
             >
               Simple and easy insurance, telemedicine and health bundles for you
               and family. All available through affordable monthly payments via
               your mobile wallet.
             </p>
-            <button className="btn btn-outline-dark text-white mb-3">
+            <button className="contact-btn btn btn-outline-dark text-white mb-3">
               Learn More
               <i className="ms-2 fas fa-long-arrow-alt-right"></i>
             </button>

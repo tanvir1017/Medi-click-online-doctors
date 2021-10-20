@@ -1,4 +1,5 @@
 import React from "react";
+import "../HomePage/Home.css";
 
 const Career = () => {
   return (
@@ -9,15 +10,17 @@ const Career = () => {
             className="col-md-6 col-lg-6 col-12"
             style={{ textAlign: "left" }}
           >
-            <p className="headingTag fw-bold">Fly With Your Bright Career</p>
+            <p className="headingTag fw-bold contact-heading">
+              Fly With Your Bright Career
+            </p>
             <p
-              className="text-white"
+              className="text-white contact-heading"
               style={{ textAlign: "left", marginTop: "-10px" }}
             >
               Click Medic provides simple, affordable health and insurance
               services
             </p>
-            <button className="btn btn-outline-dark text-white mb-3">
+            <button className="contact-btn btn btn-outline-dark text-white mb-3">
               Learn More
               <i className="ms-2 fas fa-long-arrow-alt-right"></i>
             </button>

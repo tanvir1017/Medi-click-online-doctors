@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../HomePage/Home.css";
 
 const FAQ = () => {
   return (
@@ -10,16 +11,18 @@ const FAQ = () => {
             className="col-md-6 col-lg-6 col-12 "
             style={{ textAlign: "left" }}
           >
-            <p className="headingTag fw-bold">frequently asked question</p>
+            <p className="headingTag fw-bold contact-heading">
+              frequently asked question
+            </p>
             <p
-              className="text-white"
+              className="text-white contact-heading"
               style={{ textAlign: "left", marginTop: "-10px" }}
             >
               Click Medic provides simple, affordable health and insurance
               services
             </p>
             <Link to="/home_page">
-              <button className="btn btn-outline-dark text-white">
+              <button className="contact-btn btn btn-outline-dark text-white">
                 Home
                 <i className="ms-2 fas fa-long-arrow-alt-left"></i>
               </button>
