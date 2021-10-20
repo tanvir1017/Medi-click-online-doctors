@@ -31,8 +31,8 @@ const HomePage = () => {
               <i className="ms-2 fas fa-long-arrow-alt-right"></i>
             </button>
           </div>
-          <div className="col-md-2 col-lg-2"></div>
-          <div className="col-md-4 col-lg-4 col-sm-8">
+          <div className="col-md-2 col-lg-2 col-sm-12"></div>
+          <div className="col-md-4 col-lg-4 col-sm-12">
             <img
               className="img-fluid"
               src="https://milvikbd.com/_next/image?url=%2FHome-Page-Banner.png&w=384&q=75"
@@ -42,15 +42,15 @@ const HomePage = () => {
         </div>
         <div className="row">
           <div className="mb-0 col-md-6 col-sm-12 col-lg-12">
-            <span className="fw-bold fs-5 text-white me-3">
-              Underwritten By
-            </span>
-            <img
-              width="20%"
-              className="img-fluid bg-white px-2 rounded"
-              src="https://milvikbd.com/_next/image?url=%2FUnderwriter-logo.png&w=384&q=75"
-              alt=""
-            />
+            <div className="row mt-2">
+              <div className="col-md-12 col-lg-12 col-sm-12">
+                <img
+                  className="productImg img-fluid bg-white px-2 rounded"
+                  src="https://milvikbd.com/_next/image?url=%2FUnderwriter-logo.png&w=384&q=75"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

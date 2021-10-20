@@ -50,7 +50,15 @@
   font-size: 70px;
   color: white;
 }
+.productImg {
+  width: 20%;
+}
 @media only screen and (max-width: 688px) {
+  .productImg {
+    width: 100%;
+    margin-bottom: -20px;
+    margin-top: 3%;
+  }
   .contact-form {
     width: 90%;
     margin-top: 2%;
